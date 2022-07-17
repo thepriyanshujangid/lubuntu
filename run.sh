@@ -12,7 +12,7 @@ sudo -S <<< "p" apt install  nomacs  gedit  gnome-screenshot indicator-multiload
 sudo -S <<< "p" apt purge pidgin* mplayer* xpad* gpicview* update-notifier*  update-manager*  sylpheed* gnome-mpv* synaptic*   -y  
 sudo -S <<< "p" apt autoremove  -y 
 cd ~
-git clone https://github.com/thepriyanshujangid/ssh && cd ssh && cp -r .ssh ~/ && cd ..  && sudo -S <<< "p"  chmod -R 700 ~/.ssh
+git clone https://github.com/thepriyanshujangid/ssh && cd ssh && cp -r .ssh ~/  && sudo -S <<< "p"  chmod -R 700 ~/.ssh && cd ~ && sudo -S <<< "p" rm ssh  
 git clone  https://github.com/thepriyanshujangid/sdat2img && mv sdat2img /opt
 
 sudo -S <<< "p" xdg-mime default nomacs.desktop image/gif image/jpeg image/png image/bmp image/x-eps image/x-ico image/x-portable-bitmap image/x-portable-graymap image/x-portable-pixmap image/x-xbitmap image/x-xpixmap 
