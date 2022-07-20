@@ -19,6 +19,7 @@ sudo -S <<< "p" xdg-mime default nomacs.desktop image/gif image/jpeg image/png i
 lxpanelctl restart
 echo ' xmodmap -e "keycode 66=space" ' >> ~/.profile
 echo 'xmodmap -e "keycode 108=Caps_Lock" '  >>  ~/.profile
+echo  " synclient TouchpadOff=0 " >> ~/.profile
 
 echo 'xmodmap -e "clear lock"' >>~/.profile
 echo "syndaemon -d -t" >> ~/.profile
