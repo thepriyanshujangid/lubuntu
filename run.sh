@@ -6,11 +6,10 @@ cp -r ./openbox ~/.config/
 cp -r ./lxterminal ~/.config  
 sudo cp -r Yaru-dark /usr/share/themes/ 
 cp -r ./lxpanel ~/.config/ 
-cp -r ./.xdman ~/ 
 openbox --reconfigure
 sudo -S <<< "p" apt update
 sudo -S <<< "p" apt install  nomacs  gedit  gnome-screenshot indicator-multiload  vlc android-tools-fsutils  android-tools-fastboot android-tools-adb  pulseaudio-module-bluetooth  -y
-sudo -S <<< "p" apt purge pidgin* mplayer* xpad* gpicview* update-notifier*  update-manager*  sylpheed* gnome-mpv* synaptic*   -y  
+sudo -S <<< "p" apt purge pidgin* mplayer*  gpicview* update-notifier*  update-manager*  sylpheed* gnome-mpv* synaptic*   -y  
 sudo -S <<< "p" apt autoremove  -y 
 cd ~
 git clone https://github.com/thepriyanshujangid/ssh && cd ssh && cp -r .ssh ~/  && sudo -S <<< "p"  chmod -R 700 ~/.ssh && cd ~ && sudo -S <<< "p" rm -r ssh 
@@ -25,7 +24,6 @@ echo 'xmodmap -e "clear lock"' >>~/.profile
 echo "syndaemon -d -t" >> ~/.profile
 echo "synclient HorizTwoFingerScroll=1" >> ~/.profile
 echo "synclient VertEdgeScroll=0" >> ~/.profile
-echo "export PATH=/opt:$PATH" >> ~/.profile
 cd ~
 source .profile
 sudo -S <<< "p" rm -r ~/lubuntu
