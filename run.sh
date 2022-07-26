@@ -8,7 +8,7 @@ sudo cp -r Yaru-dark /usr/share/themes/
 cp -r ./lxpanel ~/.config/ 
 openbox --reconfigure
 sudo -S <<< "p" apt update
-sudo -S <<< "p" apt install  nomacs  gedit  gnome-screenshot indicator-multiload  vlc android-tools-fsutils  android-tools-fastboot android-tools-adb  pulseaudio-module-bluetooth  -y
+sudo -S <<< "p" apt install  nomacs  gedit clipit gnome-screenshot indicator-multiload  vlc android-tools-fsutils  android-tools-fastboot android-tools-adb  pulseaudio-module-bluetooth  -y
 sudo -S <<< "p" apt purge pidgin* mplayer*  gpicview* update-notifier*  update-manager*  sylpheed* gnome-mpv* synaptic*   -y  
 sudo -S <<< "p" apt autoremove  -y 
 cd ~
